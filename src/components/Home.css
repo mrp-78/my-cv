@@ -1,0 +1,154 @@
+header {
+  position: relative;
+  height: 700px;
+  min-height: 500px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  background-color: #20c5baf2;
+}
+
+header .banner {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+header .banner-text {
+  width: 100%;
+}
+header .banner-text h1 {
+  font: 60px/1.1em "opensans-bold", sans-serif;
+  font-weight: bold;
+  color: #0b3a42;
+  letter-spacing: -2px;
+  margin: 20px auto 18px auto;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+header .banner-text h3 {
+  font: 30px/1.9em "librebaskerville-regular", serif;
+  font-weight: bold;
+  color: white;
+  margin: 0 auto;
+  width: 70%;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header .banner-text .profile {
+  margin-top: 100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: initial;
+  padding: 2px;
+  border-width: 7px;
+  border-color: #0b3a42;
+  border-style: solid;
+  background-color: white;
+}
+
+header .social {
+  margin: 24px 0;
+  /* padding: 0;
+  font-size: 30px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8); */
+}
+header .social li {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 0;
+}
+header .social li a img {
+  width: 30px;
+  height: 30px;
+}
+
+header .social li a:hover {
+  color: #11abb0;
+  fill: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333;
+}
+
+.container {
+  position: absolute;
+  display: block;
+  /* bottom: 15%; */
+  left: 49.3%;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
+}

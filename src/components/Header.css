@@ -1,0 +1,23 @@
+.topnav {
+  background-color: #20c5baf2 !important;
+  justify-content: center !important;
+}
+
+.item {
+  color: white;
+  margin: 5px 20px;
+  font-weight: bold;
+}
+
+.item:hover {
+  border-color: white;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+}
+
+.selected {
+  border-color: #0b3a42 !important;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  color: #0b3a42;
+}

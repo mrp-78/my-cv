@@ -21,7 +21,7 @@ header .banner-text {
   width: 100%;
 }
 header .banner-text h1 {
-  font: 60px/1.1em "opensans-bold", sans-serif;
+  font: 50px/1.1em "opensans-bold", sans-serif;
   font-weight: bold;
   color: #0b3a42;
   letter-spacing: -2px;
@@ -30,7 +30,7 @@ header .banner-text h1 {
 }
 
 header .banner-text h3 {
-  font: 30px/1.9em "librebaskerville-regular", serif;
+  font: 28px/1.9em "librebaskerville-regular", serif;
   font-weight: bold;
   color: white;
   margin: 0 auto;
@@ -39,7 +39,7 @@ header .banner-text h3 {
 }
 
 header .banner-text .profile {
-  margin-top: 100px;
+  margin-top: 7%;
   width: 200px;
   height: 200px;
   border-radius: 100%;

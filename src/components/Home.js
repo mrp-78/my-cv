@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Home.css";
+import { Dropdown, ListGroup, Accordion, Card, Button } from "react-bootstrap";
 
 class Home extends Component {
   state = {};
@@ -29,17 +30,12 @@ class Home extends Component {
               </li>
             </ul>
           </div>
-        </div>
-        {/* <p className="scrolldown">
-          <a className="smoothscroll" href="#about">
-            <i className="icon-down-circle"></i>
+          <a>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
           </a>
-        </p>{" "} */}
-        <a class="container">
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-          <div class="chevron"></div>
-        </a>
+        </div>
       </header>
     );
   }

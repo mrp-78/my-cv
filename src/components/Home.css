@@ -160,5 +160,9 @@ section .social li a img:hover {
     width: 175px;
     height: 175px;
     border-width: 5px;
+    margin-top: 120px;
+  }
+  #Home {
+    height: 600px;
   }
 }

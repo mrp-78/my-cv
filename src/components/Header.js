@@ -30,7 +30,9 @@ class Header extends Component {
                     borderColor: "#d8d8d8",
                   }}
                 >
-                  <div className="item">{item}</div>
+                  <a className="item" href={"#" + item}>
+                    {item}
+                  </a>
                 </ListGroupItem>
               ))}
             </ListGroup>

@@ -6,7 +6,7 @@ class Home extends Component {
   state = {};
   render() {
     return (
-      <header id="home">
+      <section id="Home">
         <div className="row banner">
           <div className="banner-text">
             <img className="profile" src={require("../assets/profile.png")} />
@@ -31,12 +31,12 @@ class Home extends Component {
             </ul>
           </div>
           <a>
-            <div class="chevron"></div>
-            <div class="chevron"></div>
-            <div class="chevron"></div>
+            <a class="chevron" href="#Background"></a>
+            <a class="chevron" href="#Background"></a>
+            <a class="chevron" href="#Background"></a>
           </a>
         </div>
-      </header>
+      </section>
     );
   }
 }

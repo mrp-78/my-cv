@@ -4,20 +4,15 @@ import { ListGroupItem, Accordion, Button, ListGroup } from "react-bootstrap";
 
 class Header extends Component {
   state = {
-    Items: [
-      "Home",
-      "Services",
-      "Portfolio",
-      "Experience",
-      "Testimonial",
-      "Contact",
-    ],
+    Items: ["Home", "Background", "Skills", "Projects", "Contact"],
   };
   render() {
     return (
-      <di className="topnav navbar  navbar-light">
+      <nav className="topnav navbar shadow">
         {this.state.Items.map((item) => (
-          <div className="item desktop">{item}</div>
+          <a className="item desktop" href={"#" + item}>
+            {item}
+          </a>
         ))}
         <Accordion className="mobile">
           <Accordion.Toggle as={Button} variant="link" eventKey="0">
@@ -27,7 +22,7 @@ class Header extends Component {
             ></img>
           </Accordion.Toggle>
           <Accordion.Collapse eventKey="0">
-            <ListGroup>
+            <ListGroup className="shadow">
               {this.state.Items.map((item) => (
                 <ListGroupItem
                   style={{
@@ -41,7 +36,7 @@ class Header extends Component {
             </ListGroup>
           </Accordion.Collapse>
         </Accordion>
-      </di>
+      </nav>
     );
   }
 }

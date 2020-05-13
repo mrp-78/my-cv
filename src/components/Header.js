@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import "./Header.css";
-import { ListGroupItem, Accordion, Button, ListGroup } from "react-bootstrap";
+import {
+  ListGroupItem,
+  Accordion,
+  Button,
+  ListGroup,
+  useAccordionToggle,
+} from "react-bootstrap";
 
 class Header extends Component {
   state = {
@@ -30,9 +36,14 @@ class Header extends Component {
                     borderColor: "#d8d8d8",
                   }}
                 >
-                  <a className="item" href={"#" + item}>
-                    {item}
-                  </a>
+                  <Accordion.Toggle
+                    as={Button}
+                    variant="link"
+                    eventKey="1"
+                    href={"#" + item}
+                  >
+                    <div className="item">{item}</div>
+                  </Accordion.Toggle>
                 </ListGroupItem>
               ))}
             </ListGroup>

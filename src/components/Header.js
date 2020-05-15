@@ -27,8 +27,8 @@ class Header extends Component {
               style={{ width: "25px", height: "25px" }}
             ></img>
           </Accordion.Toggle>
-          <Accordion.Collapse eventKey="0">
-            <ListGroup className="shadow">
+          <Accordion.Collapse eventKey="0" className="top">
+            <ListGroup className="shadow top">
               {this.state.Items.map((item) => (
                 <ListGroupItem
                   style={{

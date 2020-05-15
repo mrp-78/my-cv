@@ -1,7 +1,7 @@
 #Home {
   position: relative;
   /* top: 60px; */
-  height: 800px;
+  height: 880px;
   min-height: 500px;
   width: 100%;
   text-align: center;
@@ -42,7 +42,7 @@ section .banner-text h3 {
 }
 
 section .banner-text .profile {
-  margin-top: 150px;
+  margin-top: 200px;
   width: 200px;
   height: 200px;
   border-radius: 100%;
@@ -85,13 +85,25 @@ section .social li a img:hover {
   background: #333;
 } */
 
+.ch-container {
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  bottom: 25px;
+  width: 35px;
+  height: 60px;
+}
+
 .chevron {
   position: absolute;
   width: 28px;
   height: 8px;
   opacity: 0;
-  left: 50%;
-  margin-left: -5px;
+  margin-left: -14px;
+  margin-top: -10px;
+  /* left: 50%;
+  margin-left: -5px; */
+  /* bottom: 100px; */
   transform: scale3d(0.5, 0.5, 0.5);
   animation: move 3s ease-out infinite;
 }
@@ -150,6 +162,9 @@ section .social li a img:hover {
 }
 
 @media screen and (max-width: 700px) {
+  #home {
+    height: 600px;
+  }
   section .banner-text h1 {
     font: 35px/1.1em "opensans-bold", sans-serif;
   }

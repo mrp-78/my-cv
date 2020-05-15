@@ -37,10 +37,10 @@ class Home extends Component {
               ))}
             </ul>
           </div>
-          <a>
-            <a class="chevron" href="#Background"></a>
-            <a class="chevron" href="#Background"></a>
-            <a class="chevron" href="#Background"></a>
+          <a className="ch-container" href="#Background">
+            <a class="chevron"></a>
+            <a class="chevron"></a>
+            <a class="chevron"></a>
           </a>
         </div>
       </section>

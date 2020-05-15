@@ -18,6 +18,11 @@ topnav:before {
   box-shadow: black;
 }
 
+.top {
+  position: relative;
+  top: 0 !important;
+}
+
 .item {
   color: white;
   margin: 5px 25px;

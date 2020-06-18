@@ -16,7 +16,7 @@ class Header extends Component {
     return (
       <nav className="topnav navbar shadow">
         {this.state.Items.map((item) => (
-          <a className="item desktop" href={"#" + item}>
+          <a key={item} className="item desktop" href={"#" + item}>
             {item}
           </a>
         ))}
@@ -31,6 +31,7 @@ class Header extends Component {
             <ListGroup className="shadow top">
               {this.state.Items.map((item) => (
                 <ListGroupItem
+                  key={item}
                   style={{
                     backgroundColor: "#20c5baf2",
                     borderColor: "#d8d8d8",
@@ -42,7 +43,9 @@ class Header extends Component {
                     eventKey="1"
                     href={"#" + item}
                   >
-                    <div className="item">{item}</div>
+                    <div className="item" key={item}>
+                      {item}
+                    </div>
                   </Accordion.Toggle>
                 </ListGroupItem>
               ))}

@@ -40,17 +40,19 @@ class Skills extends Component {
         <div className="skills">
           <h3 className="s-head">Skills</h3>
           {this.state.skills.map((skill) => (
-            <div className="s-col">
+            <div className="s-col" key={skill.name}>
               <div className="skill-row left">
                 <div className="skill-container">
                   <div className="skill">{skill.name}</div>
                   {skill.badges.map((badge) => (
-                    <span class="badge badge-light">{badge}</span>
+                    <span key={badge} className="badge badge-light">
+                      {badge}
+                    </span>
                   ))}
                 </div>
-                <div class="meter">
+                <div className="meter">
                   <div style={{ width: skill.percent }}>
-                    <div class="my-progress">{skill.percent}</div>
+                    <div className="my-progress">{skill.percent}</div>
                   </div>
                 </div>
               </div>

@@ -85,74 +85,90 @@ class Background extends Component {
       <section id="Background">
         <div className="experience">
           <h3 className="head">Experience</h3>
-          <div className="row">
-            <td>
-              <img className="e-pic" src={require("../assets/sahab.png")} />
-            </td>
-            <td className="e-left">
-              <div>
-                <h5>Big data Engineer</h5>
-                <div
-                  className="row"
-                  style={{ justifyContent: "left", marginLeft: "1px" }}
-                >
-                  <h6>sahab pardaz</h6>
-                  <ul>
-                    <li>Internship</li>
-                  </ul>
-                </div>
-                <div className="gray">Jul2019-Sep2019</div>
-                <div className="gray">Iran, Theran</div>
-                <div>
-                  work on Search engine and crawler project with big data tools
-                </div>
-              </div>
-            </td>
-          </div>
+          <table className="row">
+            <tbody>
+              <tr>
+                <td>
+                  <img className="e-pic" src={require("../assets/sahab.png")} />
+                </td>
+                <td className="e-left">
+                  <div>
+                    <h5>Big data Engineer</h5>
+                    <div
+                      className="row"
+                      style={{ justifyContent: "left", marginLeft: "1px" }}
+                    >
+                      <h6>sahab pardaz</h6>
+                      <ul>
+                        <li>Internship</li>
+                      </ul>
+                    </div>
+                    <div className="gray">Jul2019-Sep2019</div>
+                    <div className="gray">Iran, Theran</div>
+                    <div>
+                      work on Search engine and crawler project with big data
+                      tools
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div className="education">
           <h3 className="head">Education</h3>
           <div className="row">
-            <td>
-              <img className="e-pic" src={require("../assets/Sbu-logo.png")} />
-            </td>
-            <td className="e-left">
-              <div>
-                <h5>Shahid Beheshti University</h5>
-                <div
-                  className="row"
-                  style={{ justifyContent: "left", marginLeft: "1px" }}
-                >
-                  <h6>Computer Engineering</h6>
-                  <ul>
-                    <li>Under graduate student</li>
-                  </ul>
-                </div>
-                <div className="gray">Sep2018-now</div>
-                <div className="gray">Iran, Theran</div>
-              </div>
-            </td>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      className="e-pic"
+                      src={require("../assets/Sbu-logo.png")}
+                    />
+                  </td>
+                  <td className="e-left">
+                    <div>
+                      <h5>Shahid Beheshti University</h5>
+                      <div
+                        className="row"
+                        style={{ justifyContent: "left", marginLeft: "1px" }}
+                      >
+                        <h6>Computer Engineering</h6>
+                        <ul>
+                          <li>Under graduate student</li>
+                        </ul>
+                      </div>
+                      <div className="gray">Sep2018-now</div>
+                      <div className="gray">Iran, Theran</div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <div className="certifications">
           <h3 className="head">Certifications</h3>
           <div className="row">
             {this.state.certifications.map((cf) => (
-              <div class="card">
+              <div key={cf.title} className="card">
                 <div className="card-img-top grid-container">
                   {cf.url.map((url) => (
-                    <a href={url.ref} className="grid-item">
+                    <a key={url.ref} href={url.ref} className="grid-item">
                       <img src={url.load} className="card-img-top" />
                     </a>
                   ))}
                 </div>
-                <div class="card-body">
-                  <h5 class="card-title">{cf.title}</h5>
-                  <p class="card-text">{cf.text}</p>
-                  <p class="card-text gray">{cf.date}</p>
-                  <p class="card-text">
+                <div className="card-body">
+                  <h5 className="card-title">{cf.title}</h5>
+                  <p className="card-text">{cf.text}</p>
+                  <p className="card-text gray">{cf.date}</p>
+                  <p className="card-text">
                     {cf.badges.map((bg) => (
-                      <span class="badge ">{bg}</span>
+                      <span key={bg} className="badge ">
+                        {bg}
+                      </span>
                     ))}
                   </p>
                 </div>

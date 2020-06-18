@@ -29,7 +29,7 @@ class Home extends Component {
             <h3>Data Engineer / Web Developer</h3>
             <ul className="social">
               {this.state.social.map((item) => (
-                <li>
+                <li key={item.url}>
                   <a href={item.url}>
                     <img src={require("../assets/" + item.image)} />
                   </a>
@@ -38,9 +38,9 @@ class Home extends Component {
             </ul>
           </div>
           <a className="ch-container" href="#Background">
-            <a class="chevron"></a>
-            <a class="chevron"></a>
-            <a class="chevron"></a>
+            <span className="chevron"></span>
+            <span className="chevron"></span>
+            <span className="chevron"></span>
           </a>
         </div>
       </section>

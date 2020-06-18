@@ -57,7 +57,7 @@ class Projects extends Component {
           <div className="row">
             {this.state.projects.map((cf) => (
               <div key={cf.title} className="card">
-                <div key={cf.icon} className="grid-item">
+                <div className="card-image">
                   <img
                     alt="card"
                     src={require("../assets/" + cf.icon)}

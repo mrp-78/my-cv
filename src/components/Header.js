@@ -4,7 +4,7 @@ import { ListGroupItem, Accordion, Button, ListGroup } from "react-bootstrap";
 
 class Header extends Component {
   state = {
-    Items: ["Home", "Background", "Skills", "Projects", "Contact"],
+    Items: ["Home", "Background", "Projects", "Skills"],
   };
   render() {
     return (

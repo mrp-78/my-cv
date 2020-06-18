@@ -5,6 +5,20 @@ class Background extends Component {
   state = {
     certifications: [
       {
+        title: "Web Development with PHP",
+        url: [
+          {
+            load:
+              "https://quera.ir/media/CACHE/images/public/quera_certificate/b1e7272b1d07437894e67a7cb0bcbb64/fdcda99e6f70bc3e9dc4ceec49b08d52.jpg",
+            ref:
+              "https://quera.ir/media/public/quera_certificate/b1e7272b1d07437894e67a7cb0bcbb64.jpg",
+          },
+        ],
+        text: "Quera College",
+        date: "Issued May2020",
+        badges: ["PHP", "MySQL"],
+      },
+      {
         title: "Machine Learning",
         url: [
           {

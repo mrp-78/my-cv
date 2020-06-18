@@ -57,13 +57,13 @@ class Projects extends Component {
           <div className="row">
             {this.state.projects.map((cf) => (
               <div key={cf.title} className="card">
-                <a key={cf.icon} className="grid-item">
+                <div key={cf.icon} className="grid-item">
                   <img
                     alt="card"
                     src={require("../assets/" + cf.icon)}
                     className="card-img-top pic"
                   />
-                </a>
+                </div>
                 <div className="card-body">
                   <h5 className="card-title">
                     <a href={cf.link} className="link">

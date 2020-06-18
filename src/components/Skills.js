@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import "./Skills.css";
+import VisibilitySensor from "react-visibility-sensor";
 
 class Skills extends Component {
   state = {
+    visibility: false,
     skills: [
       {
         name: "Programming",
@@ -35,32 +37,41 @@ class Skills extends Component {
     ],
   };
 
+  onChange = (visibility) => {
+    this.setState({ ...this.state, visibility });
+  };
+
   render() {
     return (
       <section id="Skills">
-        <div className="skills">
-          <h3 className="s-head">Skills</h3>
-          {this.state.skills.map((skill) => (
-            <div className="s-col" key={skill.name}>
-              <div className="skill-row left">
-                <div className="skill-container">
-                  <div className="skill">{skill.name}</div>
-                  {skill.badges.map((badge) => (
-                    <span key={badge} className="badge badge-light">
-                      {badge}
-                    </span>
-                  ))}
-                </div>
-                <div className="meter">
-                  <div style={{ width: skill.percent }}>
-                    <div className="my-progress">{skill.percent}</div>
+        <VisibilitySensor partialVisibility onChange={this.onChange}>
+          <div className="skills">
+            <h3 className="s-head">Skills</h3>
+            {this.state.skills.map((skill) => (
+              <div className="s-col" key={skill.name}>
+                <div className="skill-row left">
+                  <div className="skill-container">
+                    <div className="skill">{skill.name}</div>
+                    {skill.badges.map((badge) => (
+                      <span key={badge} className="badge badge-light">
+                        {badge}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="meter">
+                    <div style={{ width: skill.percent }}>
+                      <div
+                        className={this.state.visibility ? "my-progress" : ""}
+                      >
+                        {skill.percent}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-        )}
+            ))}
+          </div>
+        </VisibilitySensor>
       </section>
     );
   }

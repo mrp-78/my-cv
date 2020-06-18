@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Home.css";
-import { Dropdown, ListGroup, Accordion, Card, Button } from "react-bootstrap";
 
 class Home extends Component {
   state = {
@@ -24,14 +23,21 @@ class Home extends Component {
       <section id="Home">
         <div className="row banner">
           <div className="banner-text">
-            <img className="profile" src={require("../assets/profile.png")} />
+            <img
+              alt="profile"
+              className="profile"
+              src={require("../assets/profile.png")}
+            />
             <h1 className="responsive-headline">Mohammadreza Pakzadian</h1>
             <h3>Data Engineer / Web Developer</h3>
             <ul className="social">
               {this.state.social.map((item) => (
                 <li key={item.url}>
                   <a href={item.url}>
-                    <img src={require("../assets/" + item.image)} />
+                    <img
+                      alt={item.image}
+                      src={require("../assets/" + item.image)}
+                    />
                   </a>
                 </li>
               ))}

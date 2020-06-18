@@ -89,7 +89,11 @@ class Background extends Component {
             <tbody>
               <tr>
                 <td>
-                  <img className="e-pic" src={require("../assets/sahab.png")} />
+                  <img
+                    alt="sahabpardaz-logo"
+                    className="e-pic"
+                    src={require("../assets/sahab.png")}
+                  />
                 </td>
                 <td className="e-left">
                   <div>
@@ -123,6 +127,7 @@ class Background extends Component {
                 <tr>
                   <td>
                     <img
+                      alt="sbu-logo"
                       className="e-pic"
                       src={require("../assets/Sbu-logo.png")}
                     />
@@ -156,7 +161,7 @@ class Background extends Component {
                 <div className="card-img-top grid-container">
                   {cf.url.map((url) => (
                     <a key={url.ref} href={url.ref} className="grid-item">
-                      <img src={url.load} className="card-img-top" />
+                      <img alt="card" src={url.load} className="card-img-top" />
                     </a>
                   ))}
                 </div>

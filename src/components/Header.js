@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 import "./Header.css";
-import {
-  ListGroupItem,
-  Accordion,
-  Button,
-  ListGroup,
-  useAccordionToggle,
-} from "react-bootstrap";
+import { ListGroupItem, Accordion, Button, ListGroup } from "react-bootstrap";
 
 class Header extends Component {
   state = {
@@ -23,6 +17,7 @@ class Header extends Component {
         <Accordion className="mobile">
           <Accordion.Toggle as={Button} variant="link" eventKey="0">
             <img
+              alt="open-menue"
               src={require("../assets/open-menu.svg")}
               style={{ width: "25px", height: "25px" }}
             ></img>

@@ -21,6 +21,8 @@ class Skills extends Component {
           "Bootsrap",
           "JavaScript",
           "ReactJs",
+          "Redux",
+          "Ant Design",
           "PHP",
         ],
         percent: "70",
@@ -72,7 +74,6 @@ class Skills extends Component {
                           >
                             {(props) => <div>{props.number + "%"}</div>}
                           </Spring>
-                          {/* {skill.percent + "%"} */}
                         </div>
                       </div>
                     </div>

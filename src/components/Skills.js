@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Skills.css";
 import VisibilitySensor from "react-visibility-sensor";
+import { Spring } from "react-spring/renderprops";
 
 class Skills extends Component {
   state = {
@@ -9,7 +10,7 @@ class Skills extends Component {
       {
         name: "Programming",
         badges: ["Java", "Python", "C++"],
-        percent: "80%",
+        percent: "80",
       },
       {
         name: "Web Development",
@@ -22,17 +23,17 @@ class Skills extends Component {
           "ReactJs",
           "PHP",
         ],
-        percent: "70%",
+        percent: "70",
       },
       {
         name: "Machine Learning",
         badges: ["Pandas", "Numpy", "Mathplotlib", "Scikit-learn"],
-        percent: "50%",
+        percent: "50",
       },
       {
         name: "Big Data",
         badges: ["SQL", "HBase", "Kafka", "Spark", "Redis", "Elastic Search"],
-        percent: "40%",
+        percent: "40",
       },
     ],
   };
@@ -44,34 +45,43 @@ class Skills extends Component {
   render() {
     return (
       <section id="Skills">
-        <VisibilitySensor partialVisibility onChange={this.onChange}>
-          <div className="skills">
-            <h3 className="s-head">Skills</h3>
-            {this.state.skills.map((skill) => (
-              <div className="s-col" key={skill.name}>
-                <div className="skill-row left">
-                  <div className="skill-container">
-                    <div className="skill">{skill.name}</div>
-                    {skill.badges.map((badge) => (
-                      <span key={badge} className="badge badge-light">
-                        {badge}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="meter">
-                    <div style={{ width: skill.percent }}>
-                      <div
-                        className={this.state.visibility ? "my-progress" : ""}
-                      >
-                        {skill.percent}
+        <div className="skills">
+          <h3 className="s-head">Skills</h3>
+          <VisibilitySensor partialVisibility onChange={this.onChange}>
+            <div>
+              {this.state.skills.map((skill) => (
+                <div className="s-col" key={skill.name}>
+                  <div className="skill-row left">
+                    <div className="skill-container">
+                      <div className="skill">{skill.name}</div>
+                      {skill.badges.map((badge) => (
+                        <span key={badge} className="badge badge-light">
+                          {badge}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="meter">
+                      <div style={{ width: skill.percent + "%" }}>
+                        <div
+                          className={this.state.visibility ? "my-progress" : ""}
+                        >
+                          <Spring
+                            config={{ precision: 0.5 }}
+                            from={{ number: 0 }}
+                            to={{ number: skill.percent }}
+                          >
+                            {(props) => <div>{props.number + "%"}</div>}
+                          </Spring>
+                          {/* {skill.percent + "%"} */}
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </VisibilitySensor>
+              ))}
+            </div>
+          </VisibilitySensor>
+        </div>
       </section>
     );
   }

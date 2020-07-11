@@ -10,10 +10,22 @@
   background-color: #20c5baf2;
 }
 
+.bg {
+  height: 880px;
+  width: 100%;
+}
+
+.bg,
+.banner {
+  position: absolute;
+}
+
 section .banner {
+  z-index: 2;
   display: inline-block;
   vertical-align: middle;
-  margin: 0 auto;
+  margin: 0 10%;
+  left: 0;
   width: 85%;
   padding-bottom: 30px;
   text-align: center;
@@ -89,7 +101,8 @@ section .social li a img:hover {
   position: absolute;
   left: 50%;
   margin-left: -8px;
-  bottom: 25px;
+  margin-top: 150px;
+  /* bottom: 25px; */
   width: 35px;
   height: 60px;
 }

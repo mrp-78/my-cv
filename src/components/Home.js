@@ -17,6 +17,10 @@ class Home extends Component {
         image: "telegram.svg",
         url: "https://t.me/mrp_78",
       },
+      {
+        image: "email.svg",
+        url: "mailto:pakzadianmrp@gmail.com",
+      },
     ],
   };
   render() {

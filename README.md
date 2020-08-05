@@ -1,3 +1,5 @@
+# My CV
+![My CV](https://github.com/mrp-78/my-cv/blob/master/screenshot.png)
 ### [LIVE DEMO](https://mystifying-hawking-a2cfef.netlify.app/)
 <br />
 

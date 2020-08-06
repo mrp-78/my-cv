@@ -158,7 +158,7 @@ class Projects extends Component {
               <TabPane tab="Big Data" key="2">
                 {cards(this.state.dataprojects)}
               </TabPane>
-              <TabPane tab="Web Development" key="3">
+              <TabPane tab="React" key="3">
                 {cards(this.state.webprojects)}
               </TabPane>
             </Tabs>

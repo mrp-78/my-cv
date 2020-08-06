@@ -23,6 +23,7 @@ class Skills extends Component {
           "ReactJs",
           "Redux",
           "D3.js",
+          "Ant design",
           "PHP",
         ],
         percent: "70",

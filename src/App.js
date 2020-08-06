@@ -5,7 +5,6 @@ import Home from "./components/Home";
 import Background from "./components/Background";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import { Helmet } from "react-helmet";
 
 function App() {
   document.title = "CV";

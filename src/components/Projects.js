@@ -103,7 +103,9 @@ class Projects extends Component {
 
   render() {
     const { TabPane } = Tabs;
+
     const cards = (projects) => {
+      let id = 0;
       return (
         <div className="row">
           {projects.map((cf) => (
@@ -124,9 +126,10 @@ class Projects extends Component {
                 <p className="card-text gray">{cf.date}</p>
                 <div className="card-text">
                   <ul>
-                    {cf.text.map((txt) => (
-                      <li>{txt}</li>
-                    ))}
+                    {cf.text.map((txt) => {
+                      id += 1;
+                      return <li key={id}>{txt}</li>;
+                    })}
                   </ul>
                 </div>
                 <p className="card-text">

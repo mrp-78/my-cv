@@ -82,7 +82,7 @@ class Projects extends Component {
       {
         title: "Personal Resume Website",
         link: "https://github.com/mrp-78/my-cv",
-        date: "Jul2019-Sep2019",
+        date: "May2020-Jul2020",
         text: ["a responsive website to present my personal resume"],
         badges: ["React", "Ant Design", "Bootstrap", "CSS", "HTML"],
         icon: "portfolio.svg",

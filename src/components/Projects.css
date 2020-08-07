@@ -82,7 +82,7 @@ li {
     padding-top: 20px;
   }
   .card-container > .ant-tabs-card .ant-tabs-content {
-    margin-top: -20px;
+    margin-top: 0;
   }
   .card-container > .ant-tabs-card .ant-tabs-tab,
   [data-theme="compact"] .card-container > .ant-tabs-card .ant-tabs-tab {

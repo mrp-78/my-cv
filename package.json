@@ -17,6 +17,7 @@
     "react-particles-js": "^3.2.1",
     "react-scripts": "3.4.1",
     "react-spring": "^8.0.27",
+    "react-sticky": "^6.0.3",
     "react-visibility-sensor": "^5.1.1"
   },
   "scripts": {

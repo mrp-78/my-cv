@@ -11,14 +11,14 @@ class Projects extends Component {
         date: "May2020-Jul2020",
         text: [
           "quoridor game with AI and evolution algorithm for learning",
-          "Artificial inrelligence (AI) course",
+          "Artificial intelligence (AI) course",
           "Shahid Beheshti University",
         ],
         badges: ["python", "pygame"],
         icon: "artificial-intelligence.svg",
       },
       {
-        title: "Text Editore",
+        title: "Text Editor",
         link: "https://github.com/mrp-78/Text-Editore",
         date: "Jul2019-Sep2019",
         text: [

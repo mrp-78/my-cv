@@ -56,15 +56,17 @@ div .e-left {
 }
 
 .education {
-  background-color: #f2f2f2;
+  background-color: white;
   padding: 65px 60px;
 }
 
 .experience {
+  background-color: #f2f2f2;
   padding: 65px 60px;
 }
 
 .certifications {
+  background-color: #f2f2f2;
   padding: 65px 35px;
 }
 

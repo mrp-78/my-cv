@@ -112,10 +112,7 @@ class Background extends Component {
                 <td className="e-left">
                   <div>
                     <h5>Big data Engineer</h5>
-                    <div
-                      className="row"
-                      style={{ justifyContent: "left", marginLeft: "1px" }}
-                    >
+                    <div className="row e-left" style={{ marginLeft: "1px" }}>
                       <h6>sahab pardaz</h6>
                       <ul>
                         <li>Internship</li>
@@ -123,10 +120,17 @@ class Background extends Component {
                     </div>
                     <div className="gray">Jul2019-Sep2019</div>
                     <div className="gray">Iran, Theran</div>
-                    <div>
-                      work on Search engine and crawler project with big data
-                      tools
-                    </div>
+                    <ul>
+                      <li>
+                        Working on <b>RSS reader</b>, <b>Crawler</b>,{" "}
+                        <b>Search engine</b>, <b>Sites graph</b> and{" "}
+                        <b>Words similarity graph</b> projects
+                      </li>
+                      <li>
+                        Working with big data tools (Hadoop, Hbase, Elastic
+                        Search, Apache Kafka, Apache Spark, Redis, ...)
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>

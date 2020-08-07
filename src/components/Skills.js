@@ -35,7 +35,15 @@ class Skills extends Component {
       },
       {
         name: "Big Data",
-        badges: ["SQL", "HBase", "Kafka", "Spark", "Redis", "Elastic Search"],
+        badges: [
+          "Hadoop",
+          "HBase",
+          "Kafka",
+          "Spark",
+          "Redis",
+          "Elastic Search",
+          "SQL",
+        ],
         percent: "40",
       },
     ],
